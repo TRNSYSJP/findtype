@@ -1,4 +1,5 @@
 # findtype
+![findtype](./images/findtype.gif)
 A script to search for examples by specifying a Type number.
 Searches for examples containing the specified Type number from Dck files included in the Examples folder.
 <br>
@@ -26,28 +27,28 @@ python findtype.py -i -p C:\TRNSYS18\MyProjects\BuildingModel
 ```
 
 ### Usage Examples
-Search for Type56 in Examples folder
+Search for Type506 in Examples folder
 ```python
-python findtype.py 56
+python findtype.py 506
 ```
 
 You can also specify the target folder for search using the -p option.
 The following example searches for Type56 in folders under "C:\TRNSYS18\MyProjects\BuildingModel".
 ```python
-python findtype.py 56 -p C:\TRNSYS18\MyProjects\BuildingModel
+python findtype.py 506 -p C:\TRNSYS18\MyProjects\BuildingModel
 ```
 
-Search for type682
+Search for type506
 ```
-> python findtype.py 682
+> python findtype.py 506
 
 The Dck files containing the component are:
 1 - C:\TRNSYS18\Tess Models\Examples\Cogeneration (CHP) Library\Combined Cycle with Hot Water_v2a.tpf
-2 - C:\TRNSYS18\Tess Models\Examples\Cogeneration (CHP) Library\Template_ConvertingLoadsToTemperatures_v2a.tpf
-3 - C:\TRNSYS18\Tess Models\Examples\Loads and Structures Library\Synthetic Building.tpf
+2 - C:\TRNSYS18\Tess Models\Examples\Cogeneration (CHP) Library\Inlet Air Cooling_v2a.tpf
+3 - C:\TRNSYS18\Tess Models\Examples\HVAC Library\Type506_v2a.tpf
 
-Enter the number of the file you want to open (q to quit): 1
-Opening C:\TRNSYS18\Tess Models\Examples\Cogeneration (CHP) Library\Combined Cycle with Hot Water_v2a.tpf...
+Enter the number of the file you want to open (q to quit): 3
+Opening C:\TRNSYS18\Tess Models\Examples\HVAC Library\Type506_v2a.tpf...
 ```
 
 When you specify the number of a listed example, Simulation Studio launches and opens the .tpf file.

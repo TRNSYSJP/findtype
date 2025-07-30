@@ -1,4 +1,6 @@
 # findtype
+
+![findtype](./images/findtype.gif)
 Type番号を指定して作例を検索するスクリプトです。
 Examplesフォルダに含まれるDckファイルから、指定されたType番号を含む作例を検索します。
 <br>
@@ -26,28 +28,28 @@ python findtype.py -i -p C:\TRNSYS18\MyProjects\BuildingModel
 ```
 
 ### 使用例
-例）ExamplesフォルダでType56を検索する
+例）ExamplesフォルダでType506を検索する
 ```python
-python findtype.py 56
+python findtype.py 506
 ```
 
 -p オプションで検索対象のフォルダを指定することもできます。
-以下の例では"C:\TRNSYS18\MyProjects\BuildingModel"以下のフォルダを対象にしてType56を検索します。
+以下の例では"C:\TRNSYS18\MyProjects\BuildingModel"以下のフォルダを対象にしてType506を検索します。
 ```python
-python findtype.py 56 -p C:\TRNSYS18\MyProjects\BuildingModel
+python findtype.py 506 -p C:\TRNSYS18\MyProjects\BuildingModel
 ```
 
-例）type687を検索
+例）type506を検索
 ```
-> python findtype.py 682
+> python findtype.py 506
 
 The Dck files containing the component are:
 1 - C:\TRNSYS18\Tess Models\Examples\Cogeneration (CHP) Library\Combined Cycle with Hot Water_v2a.tpf
-2 - C:\TRNSYS18\Tess Models\Examples\Cogeneration (CHP) Library\Template_ConvertingLoadsToTemperatures_v2a.tpf
-3 - C:\TRNSYS18\Tess Models\Examples\Loads and Structures Library\Synthetic Building.tpf
+2 - C:\TRNSYS18\Tess Models\Examples\Cogeneration (CHP) Library\Inlet Air Cooling_v2a.tpf
+3 - C:\TRNSYS18\Tess Models\Examples\HVAC Library\Type506_v2a.tpf
 
-Enter the number of the file you want to open (q to quit): 1
-Opening C:\TRNSYS18\Tess Models\Examples\Cogeneration (CHP) Library\Combined Cycle with Hot Water_v2a.tpf...
+Enter the number of the file you want to open (q to quit): 3
+Opening C:\TRNSYS18\Tess Models\Examples\HVAC Library\Type506_v2a.tpf...
 ```
 
 リストアップされた作例の番号を指定すると、Simulation Studioが起動して.tpfが開かれます。
