@@ -18,6 +18,7 @@ Please run the "-i" option beforehand to export .tpf files to .dck files.
 ```python
 python findtype.py -i
 ```
+This initialization process takes a very long time. It's recommended to run this before taking a break, so you can enjoy a coffee while waiting.
 
 You can also specify any folder other than the default folders using the -p option.
 ```python
@@ -52,7 +53,7 @@ Opening C:\TRNSYS18\Tess Models\Examples\Cogeneration (CHP) Library\Combined Cyc
 When you specify the number of a listed example, Simulation Studio launches and opens the .tpf file.
 
 ### Note
-This script assumes that .tpf and .dck files have the same name. Normally, .dck files have the same name as .tpf files, but if a different .dck file name has been specified, the correspondence will be lost. Even if you specify a number, the .tpf file will not be opened.
+This script assumes that .tpf and .dck files have the same name. By default, .dck files have the same name as .tpf files, but some .tpf files have different .dck file names specified. In this case, the correspondence will be lost. Even if you specify a number, the .tpf file will not be opened.
 
 ### Batch File
 A batch file findtype.bat is provided for launching the script. You can register this repository folder to the PATH environment variable and execute it in the following format:
